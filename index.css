@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.chat {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* Background color for the chat container */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for outgoing messages */
+.message.outgoing {
+  background-color: #0074e4;
+  color: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+  clear: both;
+  max-width: 70%; /* Limit the maximum width of the outgoing message */
+}
+
+/* Style for incoming messages */
+.message.incoming {
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+  clear: both;
+  max-width: 70%; /* Limit the maximum width of the incoming message */
+}
+
+/* Style for buttons */
+button {
+  background-color: #0074e4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005bb8;
+}
+
+/* Style for input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Style for the chatbox */
+#chatbox {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Style for the data */
+#data {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  max-height: 200px;
+  overflow-y: auto;
+}

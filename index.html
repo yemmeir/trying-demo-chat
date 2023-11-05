@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>chat</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>chat demo</h1>
+    <div id="userData">
+      <input
+        type="text"
+        name="userData"
+        id="userName"
+        placeholder="Enter your username"
+      />
+      <input
+        type="text"
+        name="userData"
+        id="userSMS"
+        placeholder="Enter here your massage"
+      />
+    </div>
+    <!--<button onclick="post()">post</button>-->
+    <button onclick="getData()">history</button>
+    <button onclick="send()">send</button>
+
+    <hr />
+    <div id="chatbox"></div>
+    <div id="data">
+      <div class="message incoming"></div>
+      <div class="message outgoing"></div>
+    </div>
+  </body>
+</html>
