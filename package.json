@@ -1,0 +1,24 @@
+{
+  "name": "trying-demo-chat",
+  "version": "1.0.0",
+  "description": "chat demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yemmeir/trying-demo-chat.git"
+  },
+  "author": "Meir.Y.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yemmeir/trying-demo-chat/issues"
+  },
+  "homepage": "https://github.com/yemmeir/trying-demo-chat#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "loadash": "^1.0.0"
+  }
+}
