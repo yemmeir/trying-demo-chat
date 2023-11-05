@@ -8,13 +8,11 @@ function getData() {
   fetch("https://db-c34l.onrender.com/chats")
     .then((response) => response.json())
     .then(function (data) {
-      // Clear the chatbox
       document.getElementById("chatbox").innerHTML = "";
 
-      // Loop through the retrieved chat messages and display them in the chatbox
       data.forEach(function (message) {
         const messageDiv = document.createElement("div");
-        messageDiv.className = "message incoming"; // You can use outgoing for sent messages
+        messageDiv.className = "message incoming";
         messageDiv.textContent = `${message.user}: ${message.message}`;
         document.getElementById("chatbox").appendChild(messageDiv);
       });
@@ -64,7 +62,6 @@ userData.addEventListener("submit", function (e) {
     })
     .then(function (data) {
       console.log(data);
-      // You can update the chatbox with the response message here
       document.getElementById(
         "chatbox"
       ).innerHTML += `${data.user}: ${data.message}<br>`;
