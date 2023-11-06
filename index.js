@@ -5,6 +5,7 @@ function post() {
 }
 
 function getData() {
+  //remainder to add table to html
   fetch("https://db-c34l.onrender.com/chats")
     .then((response) => response.json())
     .then(function (data) {
